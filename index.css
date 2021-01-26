@@ -1,0 +1,31 @@
+@import url(https://lsong.org/stylesheets/theme/default.css);
+@import url(https://lsong.org/stylesheets/list.css);
+@import url(https://lsong.org/stylesheets/panel.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  z-index: 99;
+  font-size: 12px;
+  text-align: center;
+  background-color: #fff;
+  padding-top: env(safe-area-inset-top);
+}
+
+.list {
+  height: 100%;
+  overflow-y: auto;
+}
