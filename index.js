@@ -1,5 +1,6 @@
 import { ready } from 'https://lsong.org/scripts/dom.js';
-import { createElement as h, render } from 'https://lsong.org/tinyact/src/index.js';
+// import { createElement as h, render } from 'https://lsong.org/tinyact/src/index.js';
+import { h, render, useState, useEffect } from 'https://unpkg.com/htm/preact/standalone.module.js';
 
 import { Header, Panel, List } from './components/index.js';
 
