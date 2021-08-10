@@ -1,4 +1,4 @@
-import { createElement as h } from 'https://lsong.org/tinyact/src/h.js';
+import { h } from '../react.js';
 
 export const List = ({ onReachEnd, children }) => {
   const onScroll = e => {

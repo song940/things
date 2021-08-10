@@ -1,4 +1,4 @@
-import { createElement as h } from 'https://lsong.org/tinyact/src/h.js';
+import { h } from '../react.js';
 
 export const Header = ({ title }) => {
   return h('header', { className: 'header' },
