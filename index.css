@@ -1,5 +1,6 @@
 @import url(https://lsong.org/stylesheets/theme/default.css);
 @import url(https://lsong.org/stylesheets/list.css);
+@import url(https://lsong.org/stylesheets/form.css);
 @import url(https://lsong.org/stylesheets/panel.css);
 
 body {
@@ -7,6 +8,11 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: var(--background-color);
+}
+
+.container {
+  width: 370px;
+  margin: auto;
 }
 
 .app-container {
@@ -28,4 +34,29 @@ body {
 .list {
   height: 100%;
   overflow-y: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card img {
+  width: 80px;
+  min-height: 80px;
+  max-height: 120px;
+}
+
+.card-content {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }

@@ -4,11 +4,11 @@ export const List = ({ onReachEnd, children }) => {
   const onScroll = e => {
     const dom = e.target;
     
-    console.log(dom.offsetTop, dom.scrollTop);
+    // console.log(dom.offsetTop, dom.scrollTop);
     // onReachEnd();
   };
   return h('ul', { className: 'list', onScroll },
-    children.map(item => h(ListItem, null, item))
+    children.map(child => h(ListItem, null, child))
   );
 };
 
